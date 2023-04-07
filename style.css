@@ -1,0 +1,39 @@
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
+
+
+  /* Media queries */
+@media (max-width: 768px) {
+    /* Adjust header and nav styles */
+    header {
+      text-align: center;
+    }
+  
+    nav ul {
+      display: block;
+      text-align: center;
+    }
+  
+    nav li {
+      display: block;
+      margin: 0;
+    }
+  
+    nav a {
+      display: block;
+      padding: 0.5rem;
+    }
+  
+    /* Adjust section styles */
+    section {
+      margin-bottom: 1rem;
+    }
+  
+    /* Adjust footer styles */
+    footer {
+      font-size: 0.8rem;
+    }
+  }
