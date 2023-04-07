@@ -1,39 +1,96 @@
-@media screen and (max-width: 768px) {
-    body {
-      font-size: 16px;
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .navbar-brand {
+      margin-right: auto;
+      margin-left: auto;
     }
   }
-
-
-  /* Media queries */
-@media (max-width: 768px) {
-    /* Adjust header and nav styles */
-    header {
-      text-align: center;
-    }
   
-    nav ul {
-      display: block;
-      text-align: center;
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .navbar-nav {
+      margin-left: auto;
     }
+  }
   
-    nav li {
-      display: block;
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .navbar-toggler {
+      display: none;
+    }
+    .navbar-expand-lg {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .navbar-nav {
       margin: 0;
+      display: flex;
+      flex-direction: row;
     }
-  
-    nav a {
-      display: block;
-      padding: 0.5rem;
+    .navbar-nav .nav-item {
+      margin-right: 1rem;
     }
-  
-    /* Adjust section styles */
-    section {
-      margin-bottom: 1rem;
+    .navbar-nav .nav-link {
+      padding: 0.5rem 1rem;
     }
-  
-    /* Adjust footer styles */
-    footer {
-      font-size: 0.8rem;
+    .custom-btn {
+      margin-left: 2rem;
     }
   }
+  
+
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+
+
+/* Small devices (phones) */
+@media only screen and (max-width: 767px) {
+    .about-thumb {
+      text-align: center;
+    }
+    .about-image {
+      margin-bottom: 20px;
+    }
+    .profile-thumb {
+      text-align: center;
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about-image {
+      margin-right: 30px;
+    }
+  }
+  
+  /* Large devices (desktops) */
+  @media only screen and (min-width: 992px) {
+    .about-thumb {
+      margin-left: 50px;
+    }
+    .profile-thumb {
+      margin-right: 50px;
+    }
+  }
+  
