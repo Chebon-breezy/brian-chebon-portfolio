@@ -1,85 +1,105 @@
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    .navbar-brand {
-      margin-right: auto;
-      margin-left: auto;
-    }
+/* make navbar responsive */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
   }
-  
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    .navbar-nav {
-      margin-left: auto;
-    }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.875rem;
   }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-    .navbar-toggler {
-      display: none;
-    }
-    .navbar-expand-lg {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .navbar-nav {
-      margin: 0;
-      display: flex;
-      flex-direction: row;
-    }
-    .navbar-nav .nav-item {
-      margin-right: 1rem;
-    }
-    .navbar-nav .nav-link {
-      padding: 0.5rem 1rem;
-    }
-    .custom-btn {
-      margin-left: 2rem;
-    }
+  .nav-item {
+    margin-bottom: 1.25rem;
   }
-  
-
-
-@keyframes drop {
-	0% {
-		opacity: 0;
-		transform: translateY(-80px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0px);
-	}
+  .custom-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-brand {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
+/* make hero section responsive */
+@media (max-width: 992px) {
+  .hero {
+    height: 100vh;
+    min-height: 31.25rem;
+    padding-top: 6.25rem;
+  }
+  .hero-text {
+    text-align: center;
+    margin-bottom: 3.125rem;
+  }
+  .hero-title-wrap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+    margin-top: 1.25rem;
+  }
+  .hero-image-wrap,
+  .hero-image {
+    display: none;
+  }
+}
 
+/* make about section responsive */
+@media (max-width: 992px) {
+  .about {
+    padding: 5rem 0;
+  }
+  .about-image {
+    display: none;
+  }
+  .about-thumb {
+    text-align: center;
+    margin-bottom: 3.125rem;
+  }
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+}
 
-/* Small devices (phones) */
-@media only screen and (max-width: 767px) {
-    .about-thumb {
-      text-align: center;
-    }
-    .about-image {
-      margin-bottom: 20px;
-    }
-    .profile-thumb {
-      text-align: center;
-    }
+/* make skills section responsive */
+@media (max-width: 992px) {
+  .skills {
+    padding: 5rem 0;
   }
-  
-  /* Medium devices (tablets) */
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .about-image {
-      margin-right: 30px;
-    }
+  .skill-item {
+    text-align: center;
+    margin-bottom: 1.875rem;
   }
-  
-  /* Large devices (desktops) */
-  @media only screen and (min-width: 992px) {
-    .about-thumb {
-      margin-left: 50px;
-    }
-    .profile-thumb {
-      margin-right: 50px;
-    }
+  .skill-icon {
+    font-size: 3.125rem;
+    margin-bottom: 1.25rem;
   }
-  
+  .skill-title {
+    font-size: 1.875rem;
+  }
+}
+
+/* make project section responsive */
+@media (max-width: 992px) {
+  .projects {
+    padding: 5rem 0;
+  }
+}
