@@ -14,7 +14,7 @@ Some of the technologies and frameworks that I have experience with include:
 Front-end development: HTML, CSS, JavaScript, React, Vue, Angular, Bootstrap
 Back-end development: Node.js, Express, Flask, Django, Ruby on Rails
 Databases: MySQL, PostgreSQL, MongoDB, Firebase
-Deployment: AWS, Heroku, Netlify, Firebase Hosting
+Deployment: AWS, Heroku, Netlify, Firebase Hosting, Vercel
 
 ########
  
